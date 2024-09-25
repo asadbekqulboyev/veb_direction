@@ -1,8 +1,9 @@
-export default {
-    build: {
-      rollupOptions: {
-        external: ['jquery']
-      }
-    }
-  }
-  
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    rollupOptions: {
+      external: ['jquery'],
+    },
+  },
+});
