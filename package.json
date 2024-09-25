@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "jQuery": "^1.7.4",
+    "sass": "^1.79.3"
   }
 }

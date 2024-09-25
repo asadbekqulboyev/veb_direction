@@ -1,0 +1,17 @@
+.portfolio{
+    margin-top: 25px;
+    .container{
+        position: relative;
+        .bg{
+            position: absolute;
+            &_top{
+                top: 32px;
+                left: -36px;
+            }
+            &_bottom{
+                bottom: -10px;
+                right: 0;
+            }
+        }
+    }
+}

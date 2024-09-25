@@ -2,12 +2,187 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+
+    <link rel="stylesheet" href="./src/scss/main.scss">
+    <title>Web Direction</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="wrapper">
+      <!-- header -->
+       <header class="header">
+        <div class="container flex between a_center ">
+          <div class="header_left">
+            <a href="" class="logo"><img src="./src/assets/logo.svg" alt=""></a>
+            <nav>
+              <ul class="header_menu">
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Отзывы</a></li>
+                <li>
+                  <div class="dropdown">
+                   <span>Направления</span>
+                   <img src="./src/assets/drop_icon.svg" alt="">
+                  </div>
+                  <ul class="dropdown_child">
+                    <li><a href="">link 1</a></li>
+                    <li><a href="">link 2</a></li>
+                  </ul>
+                  
+                </li>
+                <li>
+                  <div class="dropdown">
+                   <span>Портфолио</span>
+                   <img src="./src/assets/drop_icon.svg" alt="">
+                  </div>
+                  <ul class="dropdown_child">
+                    <li><a href="">link 1</a></li>
+                    <li><a href="">link 2</a></li>
+                  </ul>
+                  
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_right ">
+            <ul class="flex a_center">
+              <li><a href="tel:+79453453443">+7 (945) 345-34-43</a></li>
+              <li>
+                <a href="" class="button">Заказать</a></li>
+              <li>
+                <div class="dropdown">
+                  <img src="./src/assets/language.svg" alt="" />
+                </div>
+                <ul class="dropdown_child">
+                  <li><a href="">Ru</a></li>
+                  <li><a href="">En</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </header>
+       <section class="hero">
+        <div class="container flex a_center">
+          <div class="hero_left">
+            <div class="content">
+              <h2 class="hero_btn_title">Чем мы занимаемся?</h2>
+            <ul>
+              <li class="menu-item active" data-slide="0">Красивый дизайн</li>
+              <li class="menu-item" data-slide="1">Настройка сайта</li>
+              <li class="menu-item" data-slide="2">Верстка</li>
+              <li class="menu-item" data-slide="3">SEO</li>
+            </ul>
+            </div>
+          </div>
+          <div class="hero_right">
+            <!-- 1 -->
+            <div class="slide active" id="slide-0">
+              <img class="bg_img" src="./src/assets/slide.png" alt="">
+              <div class="tags">
+                <span class="button light">figma</span>
+                <span class="button light">psd</span>
+              </div>
+              <h3 class="slide_title"> Красивый дизайн</h3>
+              <p class="slide_text">Мы поможем установить узнаваемый бренд и привлечь внимание посетителей на важных аспектах.</p>
+              <a href="#" class="button">Сделать заказ</a>
+            </div>
+            <!-- 2 -->
+            <div class="slide" id="slide-1">
+              <img class="bg_img" src="./src/assets/slide.png" alt="">
+              <h3 class="slide_title">Настройка сайта</h3>
+              <p class="slide_text">Профессиональная настройка сайта для максимальной производительности и удобства использования.</p>
+              <a href="#" class="button">Заказать настройку</a>
+            </div>
+            <!-- 3 -->
+            <div class="slide" id="slide-2">
+              <img class="bg_img" src="./src/assets/slide.png" alt="">
+              <h3 class="slide_title">Верстка</h3>
+              <p class="slide_text">Качественная верстка сайтов с учетом всех современных стандартов.</p>
+              <a href="#" class="button">Заказать верстку</a>
+            </div>
+            <!-- 4 -->
+            <div class="slide" id="slide-3">
+              <img class="bg_img" src="./src/assets/slide.png" alt="">
+              <h3 class="slide_title">SEO</h3>
+              <p class="slide_text">Комплексное продвижение вашего сайта в поисковых системах.</p>
+              <a href="#" class="button">Заказать SEO</a>
+            </div>
+          </div>
+        </div>
+        
+       </section>
+       <section class="portfolio">
+        <div class="container">
+          <img class="bg bg_top" src="./src/assets/bg_top.png" alt="">
+          <img class="bg bg_bottom" src="./src/assets/bg_top.png" alt="">
+          <div class="section_title">
+            <h2>Примеры наших работ</h2>
+            <a href="" class="button">Посмотреть все</a>
+          </div>
+          <div class="slides flex between">
+            <div class="left_image_content">
+              <img src="./src/assets/slide_img.png" alt="">
+            </div>
+            <div class="slide_buttons">
+              <div class="button_item flex">
+                <div class="img_btn">
+                  <img src="./src/assets/dot.png" alt="">
+                </div>
+                <div class="content_btn flex between column" >
+                  <div class="btn_title">Dodopizza
+                    <p>Еда, Доставка</p>
+                  </div>
+                  <a href="">Подробнее</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+    <footer>
+        <div class="container flex between">
+            <div class="footer-left">
+                <div class="footer_logo flex a_center">
+                  <img src="./src/assets/logo.svg" alt="Web Direction Logo" class="footer-logo">
+                  <h2 class="footer_logo_text">web direction</h2>
+                </div>
+                <form action="" class="footer_form">
+                  <p>У вас остались вопросы? Свяжитесь с нами!</p>
+                  <div class="contact-form">
+                      <input type="phone" placeholder="Введите номер...">
+                      <button class="button">Оставить заявку</button>
+                  </div>
+                </form>
+                
+                <div class="contact-info">
+                    <a href="tel:+79453453443" class="tel">+7 (945) 345-34-43</a>
+                    <div class="social-icons">
+                        <a href="#"><img src="./src/assets/wp.svg" alt="WhatsApp"></a>
+                        <a href="#"><img src="./src/assets/telegram.svg" alt="Telegram"></a>
+                        <a href="#"><img src="./src/assets/wk.svg" alt="VK"></a>
+                    </div>
+                </div>
+                <p class="work-hours">График работ: <span class="red-text">пн-вс, с 8:00 по 22:00 МСК</span></p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Список работ</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика соглашения</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022. All rights reserved</p>
+        </div>
+    </footer>
+    
+    </div>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
