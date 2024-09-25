@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-commonjs": "^0.10.3"
   },
   "dependencies": {
     "jquery": "^3.7.1",
