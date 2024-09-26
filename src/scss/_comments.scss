@@ -2,6 +2,10 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 190px;
+    .comment_descrption{
+        position: relative;
+        z-index: 2666;
+        }
     .comment_bg{
         width: 100%;
         object-fit: contain;
@@ -21,12 +25,18 @@
 
     }
     .comment_container{
+        
         position: relative;
         z-index: 12;
         margin-top: 20px;
+        @media (max-width:768px) {
+            display: none;
+        }
     .comment_items{
         width: calc(33.33% - 10px);
         gap: 20px;
+    }
+
     }
     .comment_item{
         background-color: #161717;
@@ -43,6 +53,12 @@
     .comment_top{
         gap: 15px;
     }  
+
+    .comment_mobile{
+        display: none;
+        @media (max-width:768px) {
+            display: block;
+        }
     }
 
 }

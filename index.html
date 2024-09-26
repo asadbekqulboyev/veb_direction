@@ -1,438 +1,662 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
-    <link rel="stylesheet" href="./src/scss/main.scss">
-    <title>Web Direction</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- header -->
-       <header class="header">
-        <div class="container flex between a_center ">
-          <div class="header_left">
-            <a href="" class="logo"><img src="./src/assets/logo.svg" alt=""></a>
-            <nav>
-              <ul class="header_menu">
-                <li><a href="">Контакты</a></li>
-                <li><a href="">Отзывы</a></li>
-                <li>
-                  <div class="dropdown">
-                   <span>Направления</span>
-                   <img src="./src/assets/drop_icon.svg" alt="">
-                  </div>
-                  <ul class="dropdown_child">
-                    <li><a href="">link 1</a></li>
-                    <li><a href="">link 2</a></li>
-                  </ul>
-                  
-                </li>
-                <li>
-                  <div class="dropdown">
-                   <span>Портфолио</span>
-                   <img src="./src/assets/drop_icon.svg" alt="">
-                  </div>
-                  <ul class="dropdown_child">
-                    <li><a href="">link 1</a></li>
-                    <li><a href="">link 2</a></li>
-                  </ul>
-                  
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header_right ">
-            <ul class="flex a_center">
-              <li><a href="tel:+79453453443">+7 (945) 345-34-43</a></li>
-              <li>
-                <a href="" class="button">Заказать</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="./src/scss/main.scss">
+  <title>Web Direction</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="container flex between a_center ">
+        <div class="header_left">
+          <a href="" class="logo"><img src="./src/assets/logo.svg" alt=""></a>
+          <nav>
+            <ul class="header_menu">
+              <li><a href="">Примеры</a></li>
+              <li><a href="">Отзывы</a></li>
               <li>
                 <div class="dropdown">
-                  <img src="./src/assets/language.svg" alt="" />
+                  <span>Направления</span>
+                  <img src="./src/assets/drop_icon.svg" alt="">
                 </div>
                 <ul class="dropdown_child">
-                  <li><a href="">Ru</a></li>
-                  <li><a href="">En</a></li>
+                  <li><a href="">link 1</a></li>
+                  <li><a href="">link 2</a></li>
                 </ul>
+
+              </li>
+              <li>
+                <div class="dropdown">
+                  <span>Портфолио</span>
+                  <img src="./src/assets/drop_icon.svg" alt="">
+                </div>
+                <ul class="dropdown_child">
+                  <li><a href="">link 1</a></li>
+                  <li><a href="">link 2</a></li>
+                </ul>
+
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-       </header>
-       <section class="hero">
-        <div class="container flex a_center">
-          <div class="hero_left">
-            <div class="content">
-              <h2 class="hero_btn_title">Чем мы занимаемся?</h2>
+        <div class="header_right ">
+          <ul class="flex a_center">
+            <li><a href="tel:+79453453443">+7 (945) 345-34-43</a></li>
+            <li>
+              <a href="" class="button">Заказать</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <img src="./src/assets/language.svg" alt="" />
+              </div>
+              <ul class="dropdown_child">
+                <li><a href="">Ru</a></li>
+                <li><a href="">En</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container flex a_center">
+        <div class="hero_left">
+          <div class="content">
+            <h2 class="hero_btn_title">Чем мы занимаемся?</h2>
             <ul>
               <li class="menu-item active" data-slide="0">Красивый дизайн</li>
               <li class="menu-item" data-slide="1">Настройка сайта</li>
               <li class="menu-item" data-slide="2">Верстка</li>
               <li class="menu-item" data-slide="3">SEO</li>
             </ul>
-            </div>
-          </div>
-          <div class="hero_right">
-            <!-- 1 -->
-            <div class="slide active" id="slide-0">
-              <img class="bg_img" src="./src/assets/slide.png" alt="">
-              <div class="tags">
-                <span class="button light">figma</span>
-                <span class="button light">psd</span>
-              </div>
-              <h3 class="slide_title"> Красивый дизайн</h3>
-              <p class="slide_text">Мы поможем установить узнаваемый бренд и привлечь внимание посетителей на важных аспектах.</p>
-              <a href="#" class="button">Сделать заказ</a>
-            </div>
-            <!-- 2 -->
-            <div class="slide" id="slide-1">
-              <img class="bg_img" src="./src/assets/slide.png" alt="">
-              <h3 class="slide_title">Настройка сайта</h3>
-              <p class="slide_text">Профессиональная настройка сайта для максимальной производительности и удобства использования.</p>
-              <a href="#" class="button">Заказать настройку</a>
-            </div>
-            <!-- 3 -->
-            <div class="slide" id="slide-2">
-              <img class="bg_img" src="./src/assets/slide.png" alt="">
-              <h3 class="slide_title">Верстка</h3>
-              <p class="slide_text">Качественная верстка сайтов с учетом всех современных стандартов.</p>
-              <a href="#" class="button">Заказать верстку</a>
-            </div>
-            <!-- 4 -->
-            <div class="slide" id="slide-3">
-              <img class="bg_img" src="./src/assets/slide.png" alt="">
-              <h3 class="slide_title">SEO</h3>
-              <p class="slide_text">Комплексное продвижение вашего сайта в поисковых системах.</p>
-              <a href="#" class="button">Заказать SEO</a>
-            </div>
           </div>
         </div>
-        
-       </section>
-       <section class="portfolio">
-        <div class="container">
-          <img class="bg bg_top" src="./src/assets/bg_top.png" alt="">
-          <div class="section_title">
-            <h2>Примеры наших работ</h2>
-            <a href="" class="button">Посмотреть все</a>
-          </div>
-          <div class="slides flex between">
-            <div class="slide_image_content">
-              <img src="./src/assets/slide_img.png" id="slide-idx-0"  alt="">
-              <img src="./src/assets/slide_img.png" id="slide-idx-1" alt="">
-              <img src="./src/assets/slide_img.png" id="slide-idx-2" alt="">
-              <img src="./src/assets/slide_img.png" id="slide-idx-3" alt="">
-              <img src="./src/assets/slide_img.png" id="slide-idx-4" alt="">
+        <div class="hero_right">
+          <!-- 1 -->
+          <div class="slide active" id="slide-0">
+            <img class="bg_img" src="./src/assets/slide.png" alt="">
+            <div class="tags">
+              <span class="button light">figma</span>
+              <span class="button light">psd</span>
             </div>
-            <div class="slide_buttons flex column">
-              <!-- 1 -->
-              <div class="button_item flex active"  data-target="1">
-                <div class="img_btn">
-                  <img src="./src/assets/dot.png" alt="">
-                </div>
-                <div class="content_btn flex between column" >
-                  <div class="btn_title">Dodopizza
-                    <p>Еда, Доставка</p>
-                  </div>
-                  <a href="" class="link_item">Подробнее</a>
-
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="button_item flex" data-target="2">
-                <div class="img_btn">
-                  <img src="./src/assets/dot.png" alt="">
-                </div>
-                <div class="content_btn flex between column" >
-                  <div class="btn_title">Dodopizza
-                    <p>Еда, Доставка</p>
-                  </div>
-                  <a href="" class="link_item">Подробнее</a>
-
-                </div>
-              </div>
-              <!-- 3-->
-              <div class="button_item flex" data-target="3">
-                <div class="img_btn">
-                  <img src="./src/assets/dot.png" alt="">
-                </div>
-                <div class="content_btn flex between column" >
-                  <div class="btn_title">Dodopizza
-                    <p>Еда, Доставка</p>
-                  </div>
-                  <a href="" class="link_item">Подробнее</a>
-
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="button_item flex" data-target="1">
-                <div class="img_btn">
-                  <img src="./src/assets/dot.png" alt="">
-                </div>
-                <div class="content_btn flex between column" >
-                  <div class="btn_title">Dodopizza
-                    <p>Еда, Доставка</p>
-                  </div>
-                  <a href="" class="link_item">Подробнее</a>
-
-                </div>
-              </div>
-               <!-- 5 -->
-               <div class="button_item flex" data-target="1">
-                <div class="img_btn">
-                  <img src="./src/assets/dot.png" alt="">
-                </div>
-                <div class="content_btn flex between column" >
-                  <div class="btn_title">Dodopizza
-                    <p>Еда, Доставка</p>
-                  </div>
-                  <a href="" class="link_item">Подробнее</a>
-
-                </div>
-              </div>
-            </div>
+            <h3 class="slide_title"> Красивый дизайн</h3>
+            <p class="slide_text">Мы поможем установить узнаваемый бренд и привлечь внимание посетителей на важных
+              аспектах.</p>
+            <a href="#" class="button">Сделать заказ</a>
           </div>
-          <img class="bg bg_bottom" src="./src/assets/bg_top.png" alt="">
-
+          <!-- 2 -->
+          <div class="slide" id="slide-1">
+            <img class="bg_img" src="./src/assets/slide.png" alt="">
+            <h3 class="slide_title">Настройка сайта</h3>
+            <p class="slide_text">Профессиональная настройка сайта для максимальной производительности и удобства
+              использования.</p>
+            <a href="#" class="button">Заказать настройку</a>
+          </div>
+          <!-- 3 -->
+          <div class="slide" id="slide-2">
+            <img class="bg_img" src="./src/assets/slide.png" alt="">
+            <h3 class="slide_title">Верстка</h3>
+            <p class="slide_text">Качественная верстка сайтов с учетом всех современных стандартов.</p>
+            <a href="#" class="button">Заказать верстку</a>
+          </div>
+          <!-- 4 -->
+          <div class="slide" id="slide-3">
+            <img class="bg_img" src="./src/assets/slide.png" alt="">
+            <h3 class="slide_title">SEO</h3>
+            <p class="slide_text">Комплексное продвижение вашего сайта в поисковых системах.</p>
+            <a href="#" class="button">Заказать SEO</a>
+          </div>
         </div>
-       </section>
-       <section class="comments">
-        <div class="container">
-          <div class="section_title">
-            <h2>Отзывы наших клиентов</h2>
-            <a href="" class="button">Посмотреть все</a>
-          </div>
-          <div class="comment_container flex between">
-            <div class="comment_items flex column">
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">
-                  Работа выполнина на высшем уровне. Все быстро и качественно. Была проведена плодотворная работа с учетом наших желаний. 
-                </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно.  </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-            </div>
-            <div class="comment_items flex column">
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была проведена плодотворная работа с учетом наших желаний. Большая команда специалистов дала знать о своем опыте работы в данной сфере</div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-            </div>
-            <div class="comment_items flex column">
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была проведена плодотворная работа с учетом наших желаний. </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-              <div class="comment_item">
-                <div class="comment_top flex">
-                  <div class="logo">
-                    <img src="./src/assets/user_logo.png" alt="">
-                  </div>
-                  <div class="user_info">
-                    <div class="user_title">Namecompany</div>
-                    <div class="user_stars flex a_center">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/full_star.svg" alt="">
-                      <img src="./src/assets/disable_star.svg" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
-                <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="comment_mobile">
-            <div class="swiper mySwiper">
+      </div>
+
+    </section>
+    <section class="portfolio">
+
+      <div class="container">
+        <img class="bg bg_top" src="./src/assets/bg_top.png" alt="">
+        <div class="section_title">
+          <h2>Примеры наших работ</h2>
+          <a href="" class="button">Посмотреть все</a>
+        </div>
+        <div class="slides flex between">
+          <div class="slide_image_content">
+            <div  class="swiper mySwiper2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+
+          </div>
+
+
+          <div thumbsSlider="" class="swiper mySwiper slide_buttons flex column">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <!-- 1 -->
+                <div class="button_item flex " data-target="1">
+                  <div class="img_btn">
+                    <img src="./src/assets/dot.png" alt="">
+                  </div>
+                  <div class="content_btn flex between column">
+                    <div class="btn_title">Dodopizza
+                      <p>Еда, Доставка</p>
+                    </div>
+                    <a href="" class="link_item">Подробнее</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- 2 -->
+                <div class="button_item flex" data-target="2">
+                  <div class="img_btn">
+                    <img src="./src/assets/dot.png" alt="">
+                  </div>
+                  <div class="content_btn flex between column">
+                    <div class="btn_title">Dodopizza
+                      <p>Еда, Доставка</p>
+                    </div>
+                    <a href="" class="link_item">Подробнее</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- 3-->
+                <div class="button_item flex" data-target="3">
+                  <div class="img_btn">
+                    <img src="./src/assets/dot.png" alt="">
+                  </div>
+                  <div class="content_btn flex between column">
+                    <div class="btn_title">Dodopizza
+                      <p>Еда, Доставка</p>
+                    </div>
+                    <a href="" class="link_item">Подробнее</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- 4 -->
+                <div class="button_item flex" data-target="1">
+                  <div class="img_btn">
+                    <img src="./src/assets/dot.png" alt="">
+                  </div>
+                  <div class="content_btn flex between column">
+                    <div class="btn_title">Dodopizza
+                      <p>Еда, Доставка</p>
+                    </div>
+                    <a href="" class="link_item">Подробнее</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- 5 -->
+                <div class="button_item flex" data-target="1">
+                  <div class="img_btn">
+                    <img src="./src/assets/dot.png" alt="">
+                  </div>
+                  <div class="content_btn flex between column">
+                    <div class="btn_title">Dodopizza
+                      <p>Еда, Доставка</p>
+                    </div>
+                    <a href="" class="link_item">Подробнее</a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <!-- 5 -->
+                <div class="button_item flex" data-target="1">
+                  <div class="img_btn">
+                    <img src="./src/assets/dot.png" alt="">
+                  </div>
+                  <div class="content_btn flex between column">
+                    <div class="btn_title">Dodopizza
+                      <p>Еда, Доставка</p>
+                    </div>
+                    <a href="" class="link_item">Подробнее</a>
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
           
+        </div>
+        <img class="bg bg_bottom" src="./src/assets/bg_top.png" alt="">
 
+      </div>
+    </section>
+    <section class="comments">
+      <div class="container">
+        <div class="section_title">
+          <h2>Отзывы наших клиентов</h2>
+          <a href="" class="button">Посмотреть все</a>
         </div>
-        <img class="comment_bg index" src="./src/assets/commentsbg.png" alt="">
-        <img class="comment_bg bg" src="./src/assets/bg_linear.png" alt="">
-       </section>
-    <footer>
-        <div class="container flex between">
-            <div class="footer-left">
-                <div class="footer_logo flex a_center">
-                  <img src="./src/assets/logo.svg" alt="Web Direction Logo" class="footer-logo">
-                  <h2 class="footer_logo_text">web direction</h2>
+        <div class="comment_container flex between">
+          <div class="comment_items flex column">
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
                 </div>
-                <form action="" class="footer_form">
-                  <p>У вас остались вопросы? Свяжитесь с нами!</p>
-                  <div class="contact-form">
-                      <input type="phone" placeholder="Введите номер...">
-                      <button class="button">Оставить заявку</button>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
                   </div>
-                </form>
-                
-                <div class="contact-info">
-                    <a href="tel:+79453453443" class="tel">+7 (945) 345-34-43</a>
-                    <div class="social-icons">
-                        <a href="#"><img src="./src/assets/wp.svg" alt="WhatsApp"></a>
-                        <a href="#"><img src="./src/assets/telegram.svg" alt="Telegram"></a>
-                        <a href="#"><img src="./src/assets/wk.svg" alt="VK"></a>
-                    </div>
                 </div>
-                <p class="work-hours">График работ: <span class="red-text">пн-вс, с 8:00 по 22:00 МСК</span></p>
+              </div>
+              <div class="comment_descrption">
+                Работа выполнина на высшем уровне. Все быстро и качественно. Была проведена плодотворная работа с учетом
+                наших желаний.
+              </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
             </div>
-            <div class="footer-right">
-                <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Список работ</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">Политика соглашения</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
             </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+          </div>
+          <div class="comment_items flex column">
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                проведена плодотворная работа с учетом наших желаний. Большая команда специалистов дала знать о своем
+                опыте работы в данной сфере</div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+          </div>
+          <div class="comment_items flex column">
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                проведена плодотворная работа с учетом наших желаний. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>© 2022. All rights reserved</p>
+        <div class="comment_mobile">
+          <div class="">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">
+                    Работа выполнина на высшем уровне. Все быстро и качественно. Была проведена плодотворная работа с
+                    учетом наших желаний.
+                  </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                    проведена плодотворная работа с учетом наших желаний. Большая команда специалистов дала знать о
+                    своем
+                    опыте работы в данной сфере</div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                    проведена плодотворная работа с учетом наших желаний. </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="comment_item">
+                  <div class="comment_top flex">
+                    <div class="logo">
+                      <img src="./src/assets/user_logo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                      <div class="user_title">Namecompany</div>
+                      <div class="user_stars flex a_center">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/full_star.svg" alt="">
+                        <img src="./src/assets/disable_star.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
+                  <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <img class="comment_bg index" src="./src/assets/commentsbg.png" alt="">
+      <img class="comment_bg bg" src="./src/assets/bg_linear.png" alt="">
+    </section>
+    <footer>
+      <div class="container flex between">
+        <div class="footer-left">
+          <div class="footer_logo flex a_center">
+            <img src="./src/assets/logo.svg" alt="Web Direction Logo" class="footer-logo">
+            <h2 class="footer_logo_text">web direction</h2>
+          </div>
+          <form action="" class="footer_form">
+            <p>У вас остались вопросы? Свяжитесь с нами!</p>
+            <div class="contact-form">
+              <input type="phone" placeholder="Введите номер...">
+              <button class="button">Оставить заявку</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <a href="tel:+79453453443" class="tel">+7 (945) 345-34-43</a>
+            <div class="social-icons">
+              <a href="#"><img src="./src/assets/wp.svg" alt="WhatsApp"></a>
+              <a href="#"><img src="./src/assets/telegram.svg" alt="Telegram"></a>
+              <a href="#"><img src="./src/assets/wk.svg" alt="VK"></a>
+            </div>
+          </div>
+          <p class="work-hours">График работ: <span class="red-text">пн-вс, с 8:00 по 22:00 МСК</span></p>
+        </div>
+        <div class="footer-right">
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Список работ</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Политика соглашения</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2022. All rights reserved</p>
+      </div>
     </footer>
-    
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script type="module" src="main.js" defer></script>
+</body>
+
 </html>
