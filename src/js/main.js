@@ -44,18 +44,5 @@ $(document).ready(function() {
             $('.slide_image_content img#slide-idx-'+slideIndex).fadeIn(200); // Tanlangan slaydga 'active' klassini qo‘shamiz
         });
     
-    // Slayderda birinchi rasmini ko'rsatish
-    // $('.slide_image_content img').hide(0); // Barcha rasmlarni yashirish
-    // $('.slide_image_content img:first').fadeIn(0); // Birinchi rasmni ko'rsatish
-
-    // // Slayder tugmasi bosilganda, tegishli rasmni ko'rsatish
-    // $('.button_item').click(function(){
-    //     var count = $(this).attr('data-target'); // Tegishli rasmni tanlash
-
-    //     // Hamma rasmlarni fadeOut bilan yashirish
-    //     $('.slide_image_content img').fadeOut(100, function() {
-    //         // Yangi rasmni fadeIn bilan ko'rsatish
-    //         $(`.slide_image_content img#slide-idx-${count}`).fadeIn(100);
-    //     });
-    // });
+        var swiper = new Swiper(".mySwiper", {});
 });

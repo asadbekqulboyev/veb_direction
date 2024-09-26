@@ -1,10 +1,28 @@
 .comments{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 190px;
     .comment_bg{
         width: 100%;
         object-fit: contain;
-        
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        &.index{
+            z-index: 2;
+        } 
+        &.bg{
+            opacity: .7;
+            width: 76%;
+            margin: 0 auto 0;
+            bottom: -70px;
+            right: 0;
+        }       
+
     }
     .comment_container{
+        position: relative;
+        z-index: 12;
         margin-top: 20px;
     .comment_items{
         width: calc(33.33% - 10px);
