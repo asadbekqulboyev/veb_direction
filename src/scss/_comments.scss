@@ -1,0 +1,30 @@
+.comments{
+    .comment_bg{
+        width: 100%;
+        object-fit: contain;
+        
+    }
+    .comment_container{
+        margin-top: 20px;
+    .comment_items{
+        width: calc(33.33% - 10px);
+        gap: 20px;
+    }
+    .comment_item{
+        background-color: #161717;
+        border-radius:10px ;
+        overflow: hidden;
+        position: relative;
+        padding: 20px;
+        .card_bg{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .comment_top{
+        gap: 15px;
+    }  
+    }
+
+}
