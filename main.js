@@ -1,7 +1,6 @@
   import $ from 'jquery';
 
-window.addEventListener('load', function() {
-  $(document).ready(function() {
+window.addEventListener('DOMContentLoaded', function() {
       // Agar biror joyga click bo'lsa, dropdown yoki uning bolalari tashqarisida bo'lsa, dropdown yopiladi
       $(document).click(function(e) {
           if (!$(e.target).closest('.dropdown, .dropdown_child').length) {
@@ -72,4 +71,3 @@ window.addEventListener('load', function() {
             });
   });
   
-})
