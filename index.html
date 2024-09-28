@@ -13,257 +13,503 @@
 
 <body>
   <div class="wrapper">
-    <!-- header -->
     <header class="header">
-      <div class="container flex between a_center ">
-        <div class="header_left">
-          <a href="" class="logo"><img src="./src/assets/logo.svg" alt=""></a>
-          <nav>
-            <ul class="header_menu">
-              <li><a href="">Примеры</a></li>
-              <li><a href="">Отзывы</a></li>
-              <li>
-                <div class="dropdown">
-                  <span>Направления</span>
-                  <img src="./src/assets/drop_icon.svg" alt="">
-                </div>
-                <ul class="dropdown_child">
-                  <li><a href="">link 1</a></li>
-                  <li><a href="">link 2</a></li>
-                </ul>
+      <div class="container">
+        <div class="header__items">
+          <a class="header_item header_item_logo" href="/">
+            <img src="./src/assets/logo.svg" alt="logo">
+          </a>
 
+          <div class="header_item">
+            <ul class="header__navigations">
+              <li class="navigation">
+                <a href="">
+                  Контакты
+                </a>
               </li>
-              <li>
-                <div class="dropdown">
-                  <span>Портфолио</span>
-                  <img src="./src/assets/drop_icon.svg" alt="">
-                </div>
-                <ul class="dropdown_child">
-                  <li><a href="">link 1</a></li>
-                  <li><a href="">link 2</a></li>
-                </ul>
 
+              <li class="navigation">
+                <a href="#comment">
+                  Отзывы
+                </a>
               </li>
+
+              <li class="navigation">
+                <a>
+                  Направления
+                </a>
+                <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.23715 5.19583C4.84082 5.6282 4.15918 5.6282 3.76285 5.19583L0.536082 1.67573C-0.0518696 1.03432 0.40313 7.72592e-08 1.27323 1.25169e-07L7.72676 4.80514e-07C8.59687 5.28424e-07 9.05187 1.03432 8.46392 1.67572L5.23715 5.19583Z"
+                    fill="white" />
+                </svg>
+
+                <div class="lists_wrapper">
+                  <ul class="lists">
+
+                    <li class="list">
+                      <a itemprop="url" href="#">
+                        Разработка сайта
+                      </a>
+                    </li>
+
+                    <li class="list">
+                      <a itemprop="url" href="#">
+                        Верстка
+                      </a>
+                    </li>
+
+                    <li class="list">
+                      <a itemprop="url" href="#">
+                        Контекстная реклама
+                      </a>
+                    </li>
+
+                    <li class="list">
+                      <a itemprop="url" href="#">
+                        SEO-продвижение
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+
+              <li class="navigation">
+                <a itemprop="url" href="#">
+                  Портфолио
+                </a>
+              </li>
+
             </ul>
-          </nav>
-        </div>
-        <div class="header_right ">
-          <ul class="flex a_center">
-            <li><a href="tel:+79453453443">+7 (945) 345-34-43</a></li>
-            <li>
-              <a href="" class="button">Заказать</a>
-            </li>
-            <li>
-              <div class="dropdown">
-                <img src="./src/assets/language.svg" alt="" />
+          </div>
+
+          <div class="header_item header__buttons_wrapper">
+            <div class="header__buttons">
+              <a href="tel:+7 (945) 345-34-43" class="header__phone">+7 (945) 345-34-43</a>
+
+              <a class="button" href="#">Заказать</a>
+
+              <div class="header__settings_icon_wrapper">
+                <svg class="header__settings_icon header__settings_icon_word" width="27" height="28" fill="none"
+                  viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.5 26.5C20.4036 26.5 26 20.9036 26 14C26 7.09644 20.4036 1.5 13.5 1.5C6.59644 1.5 1 7.09644 1 14C1 20.9036 6.59644 26.5 13.5 26.5Z"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 14H26" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M13.5 1.5C16.6266 4.92294 18.4034 9.36504 18.5 14C18.4034 18.635 16.6266 23.0771 13.5 26.5C10.3734 23.0771 8.59656 18.635 8.5 14C8.59656 9.36504 10.3734 4.92294 13.5 1.5Z"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <div class="header__settings">
+                  <div class="items">
+
+                    <div class="item">
+
+                      <a class="button activ" href="#">
+
+                        <img src="/temple/images/langluage/russia.png" alt="">
+                        Русский
+                      </a>
+
+                      <a class="button" href="#">
+
+                        <img src="/temple/images/langluage/russia.png" alt="">
+                        Русский
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
               </div>
-              <ul class="dropdown_child">
-                <li><a href="">Ru</a></li>
-                <li><a href="">En</a></li>
-              </ul>
-            </li>
-          </ul>
+
+
+              <svg class="header__settings_icon" width="27" height="27" viewBox="0 0 27 27"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.99" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.91016 0C8.0508 0 8.19139 0 8.33203 0C8.66046 0.183528 8.77474 0.464778 8.6748 0.84375C6.76118 5.01079 6.90177 9.10649 9.09668 13.1309C11.6882 17.2929 15.4499 19.455 20.3818 19.6172C21.6659 19.6185 22.9227 19.4339 24.1523 19.0635C24.9259 18.794 25.6906 18.5039 26.4463 18.1934C26.6957 18.2236 26.8802 18.3467 27 18.5625C27 18.7207 27 18.8789 27 19.0371C24.8965 23.0989 21.6094 25.6565 17.1387 26.71C16.502 26.8321 15.8691 26.9288 15.2402 27C14.5547 27 13.8691 27 13.1836 27C8.32191 26.5032 4.58654 24.2005 1.97754 20.0918C0.877468 18.1892 0.21829 16.1502 0 13.9746C0 13.1836 0 12.3926 0 11.6016C0.620784 6.34331 3.2575 2.47612 7.91016 0Z" />
+              </svg>
+            </div>
+
+          </div>
+
+          <div class="header_mobile__icon burger_menu_open">
+            <div class="rect"></div>
+            <div class="rect"></div>
+            <div class="rect"></div>
+          </div>
         </div>
       </div>
     </header>
-    <section class="hero">
-      <div class="container flex a_center">
-        <div class="hero_left">
-          <div class="content">
-            <h2 class="hero_btn_title">Чем мы занимаемся?</h2>
-            <ul>
-              <li class="menu-item active" data-slide="0">Красивый дизайн</li>
-              <li class="menu-item" data-slide="1">Настройка сайта</li>
-              <li class="menu-item" data-slide="2">Верстка</li>
-              <li class="menu-item" data-slide="3">SEO</li>
-            </ul>
+    <div class="burger_menu__bg burger_menu_close"></div>
+    <div class="burger_menu">
+      <div class="burger_menu__content">
+        <div class="burger_menu__content_info">
+          <img src="/sample/v1/temple/images/logos/logo.svg" alt="" class="logo" onclick="location.href = '/';">
+
+          <svg class="close burger_menu_close" width="15" height="15" viewBox="0 0 15 15" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.23334 1.22848C0.935229 1.52543 0.660942 1.80387 0.447115 2.02273C0.196487 2.27925 0.197379 2.68721 0.448081 2.94366C0.878267 3.38371 1.57724 4.09588 2.36252 4.88484C3.66192 6.19031 4.77307 7.31102 4.83181 7.37521L4.9386 7.49199L2.48019 9.95126C1.64812 10.7836 0.904998 11.5351 0.456446 11.9901C0.206495 12.2436 0.201478 12.6477 0.447797 12.9048C0.666371 13.1329 0.950745 13.4259 1.26283 13.7378L2.05439 14.5289C2.31476 14.7891 2.73675 14.789 2.99705 14.5288L4.98563 12.5403C6.33851 11.1875 7.4632 10.0748 7.48484 10.0676C7.50653 10.0603 8.62656 11.1535 9.97378 12.4968C10.805 13.3257 11.5572 14.0649 12.0115 14.5096C12.2636 14.7565 12.6636 14.7623 12.9199 14.5198C13.2119 14.2436 13.5962 13.8727 13.9291 13.5275L14.531 12.9225C14.7902 12.662 14.7897 12.2408 14.5298 11.9809L10.0392 7.49029L10.3869 7.1385C10.5782 6.945 11.6656 5.85168 12.8033 4.70889C13.588 3.92065 14.3036 3.19484 14.6721 2.82033C14.8346 2.65516 14.8639 2.43104 14.7149 2.25356C14.555 2.06304 14.2785 1.75876 13.8011 1.27947C13.4716 0.948739 13.1518 0.636915 12.9149 0.40829C12.6889 0.190242 12.3507 0.175477 12.1179 0.386248C11.7608 0.709631 11.1159 1.31822 9.98715 2.44508C8.6354 3.79452 7.51995 4.90749 7.50836 4.91828C7.49673 4.92913 6.37544 3.82696 5.01655 2.46898C4.17751 1.63053 3.41756 0.886203 2.95891 0.439417C2.70522 0.192296 2.30362 0.188955 2.04778 0.433843C1.82357 0.648455 1.53684 0.926174 1.23334 1.22848Z" />
+          </svg>
+
+          <div class="burger_menu__buttons">
+            <a href="tel:+7 (945) 345-34-43" class="burger_menu__phone">+7 (945) 345-34-43</a>
+            <a class="button" href="$">
+              Заказать
+            </a>
           </div>
+
         </div>
-        <div class="hero_right">
-          <!-- 1 -->
-          <div class="slide active" id="slide-0">
-            <img class="bg_img" src="./src/assets/slide.png" alt="">
-            <div class="tags">
-              <span class="button light">figma</span>
-              <span class="button light">psd</span>
+
+        <ul class="burger_menu__navigations">
+          <li>
+            <a class="navigation" itemprop="url" href="#">
+              Контакты
+            </a>
+          </li>
+
+          <li>
+            <a class="navigation" itemprop="url" href="#">
+              Отзывы
+            </a>
+          </li>
+
+          <li>
+            <a class="navigation">
+              Направления
+
+              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11.8047 0.18794C12.0651 0.438526 12.0651 0.844807 11.8047 1.09539L6.4714 6.81206C6.21105 7.06265 5.78894 7.06265 5.5286 6.81206L0.195262 1.09539C-0.0650874 0.844807 -0.0650873 0.438526 0.195262 0.187939C0.455612 -0.0626471 0.877722 -0.0626471 1.13807 0.187939L6 5.45088L10.8619 0.18794C11.1223 -0.0626467 11.5444 -0.0626466 11.8047 0.18794Z"
+                  fill="white" />
+              </svg>
+
+            </a>
+
+            <div class="navigation_list">
+              <a class="navigation" itemprop="url" href="#">Разработка сайта</a>
+              <a class="navigation" itemprop="url" href="#">Верстка</a>
+              <a class="navigation" itemprop="url" href="#">Контекстная реклама</a>
+              <a class="navigation" itemprop="url" href="#">SEO-продвижение</a>
             </div>
-            <h3 class="slide_title"> Красивый дизайн</h3>
-            <p class="slide_text">Мы поможем установить узнаваемый бренд и привлечь внимание посетителей на важных
-              аспектах.</p>
-            <a href="#" class="button">Сделать заказ</a>
+          </li>
+
+          <li>
+            <a class="navigation" itemprop="url" href="#">
+              Портфолио
+            </a>
+          </li>
+        </ul>
+
+        <div class="burger_menu__settings">
+          <div class="setting_wrapper">
+            <p class="title">Язык</p>
+
+            <div class="setting_items_wrapper">
+
+              <div class="setting_item_select">
+                <img src="/sample/v1/temple/images/header/languages/russian-federation.svg" alt="">
+                Русский
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                  <path
+                    d="M5.23715 5.19583C4.84082 5.6282 4.15918 5.6282 3.76285 5.19583L0.536082 1.67573C-0.0518696 1.03432 0.40313 7.72592e-08 1.27323 1.25169e-07L7.72676 4.80514e-07C8.59687 5.28424e-07 9.05187 1.03432 8.46392 1.67572L5.23715 5.19583Z"
+                    fill="white" />
+                </svg>
+              </div>
+
+
+              <div class="setting_items">
+
+                <a class="setting_item activ" href="#">
+                  <img src="/sample/v1/temple/images/header/languages/russian-federation.svg" alt="">
+                  Русский
+                </a>
+                <a class="setting_item" href="#">
+                  <img src="/sample/v1/temple/images/header/languages/russian-federation.svg" alt="">
+                  Русский
+                </a>
+                <a class="setting_item" href="#">
+                  <img src="/sample/v1/temple/images/header/languages/russian-federation.svg" alt="">
+                  Русский
+                </a>
+
+              </div>
+            </div>
           </div>
-          <!-- 2 -->
-          <div class="slide" id="slide-1">
-            <img class="bg_img" src="./src/assets/slide.png" alt="">
-            <h3 class="slide_title">Настройка сайта</h3>
-            <p class="slide_text">Профессиональная настройка сайта для максимальной производительности и удобства
-              использования.</p>
-            <a href="#" class="button">Заказать настройку</a>
-          </div>
-          <!-- 3 -->
-          <div class="slide" id="slide-2">
-            <img class="bg_img" src="./src/assets/slide.png" alt="">
-            <h3 class="slide_title">Верстка</h3>
-            <p class="slide_text">Качественная верстка сайтов с учетом всех современных стандартов.</p>
-            <a href="#" class="button">Заказать верстку</a>
-          </div>
-          <!-- 4 -->
-          <div class="slide" id="slide-3">
-            <img class="bg_img" src="./src/assets/slide.png" alt="">
-            <h3 class="slide_title">SEO</h3>
-            <p class="slide_text">Комплексное продвижение вашего сайта в поисковых системах.</p>
-            <a href="#" class="button">Заказать SEO</a>
-          </div>
+
+          <!-- <div class="setting_wrapper">
+            <p class="title">Валюта</p>
+
+            <div class="setting_items_wrapper">
+
+              <div class="setting_item_select">
+                <img src="/sample/v1/temple/images/header/currencies/usd_10x12.svg" alt="">
+                USD
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                  <path
+                    d="M5.23715 5.19583C4.84082 5.6282 4.15918 5.6282 3.76285 5.19583L0.536082 1.67573C-0.0518696 1.03432 0.40313 7.72592e-08 1.27323 1.25169e-07L7.72676 4.80514e-07C8.59687 5.28424e-07 9.05187 1.03432 8.46392 1.67572L5.23715 5.19583Z"
+                    fill="white" />
+                </svg>
+              </div>
+
+
+              <div class="setting_items">
+
+                <a class="setting_item  activ " onclick="">
+                  <img src="/sample/v1/temple/images/header/currencies/aed_10x12.svg" alt="">
+                  USD
+                </a>
+
+                <a class="setting_item " onclick="">
+                  <img src="/sample/v1/temple/images/header/currencies/eur_10x12.svg" alt="">
+                  USD
+                </a>
+
+                <a class="setting_item " onclick="">
+                  <img src="/sample/v1/temple/images/header/currencies/rub_10x12.svg" alt="">
+                  USD
+                </a>
+
+                <a class="setting_item " onclick="">
+                  <img src="/sample/v1/temple/images/header/currencies/usd_10x12.svg" alt="">
+                  USD
+                </a>
+
+
+              </div>
+            </div>
+          </div> -->
         </div>
+
+        <div class="burger_menu__contact">
+          <p class="title">Контакты</p>
+          <a class="phone" href="tel:+971568463945">+971568463945</a>
+          <a class="mail" href="mailto:manager@impyrex.com">manager@impyrex.com</a>
+
+          <p class="footer_item_last_tittle">Адрес</p>
+
+          <div class="footer_item_last_map">
+            <iframe src="https://www.google.com/maps?q=&hl=&z=9&output=embed" width="100%" height="100%"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+        </div>
+
       </div>
-
-    </section>
-    <section class="portfolio">
-
-      <div class="container">
-        <img class="bg bg_top" src="./src/assets/bg_top.png" alt="">
-        <div class="section_title">
-          <h2>Примеры наших работ</h2>
-          <a href="" class="button">Посмотреть все</a>
+    </div>
+    <main>
+      <section class="hero">
+        <div class="container flex a_center">
+          <div class="hero_left">
+            <div class="content">
+              <h2 class="hero_btn_title">Чем мы занимаемся?</h2>
+              <ul>
+                <li class="menu-item active" data-index="0">Красивый дизайн</li>
+                <li class="menu-item" data-index="1">Настройка сайта</li>
+                <li class="menu-item" data-index="2">Верстка</li>
+                <li class="menu-item" data-index="3">SEO</li>
+              </ul>
+            </div>
+          </div>
+          <div class="hero_right">
+            <div class="swiper slides_hero">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"  data-index="0">
+                  <!-- 1 -->
+                  <div class="slide active">
+                    <img class="bg_img" src="./src/assets/slide.png" alt="">
+                    <div class="tags">
+                      <span class="button light">figma</span>
+                      <span class="button light">psd</span>
+                    </div>
+                    <h3 class="slide_title"> Красивый дизайн</h3>
+                    <p class="slide_text">Мы поможем установить узнаваемый бренд и привлечь внимание посетителей на
+                      важных
+                      аспектах.</p>
+                    <a href="#" class="button">Сделать заказ</a>
+                  </div>
+                </div>
+                <div class="swiper-slide"  data-index="1">
+                  <!-- 2 -->
+                  <div class="slide" id="slide-1">
+                    <img class="bg_img" src="./src/assets/slide.png" alt="">
+                    <h3 class="slide_title">Настройка сайта</h3>
+                    <p class="slide_text">Профессиональная настройка сайта для максимальной производительности и
+                      удобства
+                      использования.</p>
+                    <a href="#" class="button">Заказать настройку</a>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-index="2">
+                  <!-- 3 -->
+                  <div class="slide" id="slide-2">
+                    <img class="bg_img" src="./src/assets/slide.png" alt="">
+                    <h3 class="slide_title">Верстка</h3>
+                    <p class="slide_text">Качественная верстка сайтов с учетом всех современных стандартов.</p>
+                    <a href="#" class="button">Заказать верстку</a>
+                  </div>
+                </div>
+                <div class="swiper-slide"  data-index="3">
+                  <!-- 4 -->
+                  <div class="slide" id="slide-3">
+                    <img class="bg_img" src="./src/assets/slide.png" alt="">
+                    <h3 class="slide_title">SEO</h3>
+                    <p class="slide_text">Комплексное продвижение вашего сайта в поисковых системах.</p>
+                    <a href="#" class="button">Заказать SEO</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="slides flex between">
-          <div class="slide_image_content">
-            <div  class="swiper mySwiper2">
+
+      </section>
+      <section class="portfolio">
+        <div class="container">
+          <img class="bg bg_top" src="./src/assets/bg_top.png" alt="">
+          <div class="section_title">
+            <h2>Примеры наших работ</h2>
+            <a href="" class="button">Посмотреть все</a>
+          </div>
+          <div class="slides flex between">
+            <div class="slide_image_content">
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+
+            </div>
+
+
+            <div thumbsSlider="" class="swiper mySwiper slide_buttons flex column">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  <!-- 1 -->
+                  <div class="button_item flex " data-target="1">
+                    <div class="img_btn">
+                      <img src="./src/assets/dot.png" alt="">
+                    </div>
+                    <div class="content_btn flex between column">
+                      <div class="btn_title">Dodopizza
+                        <p>Еда, Доставка</p>
+                      </div>
+                      <a href="" class="link_item">Подробнее</a>
+
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <!-- 2 -->
+                  <div class="button_item flex" data-target="2">
+                    <div class="img_btn">
+                      <img src="./src/assets/dot.png" alt="">
+                    </div>
+                    <div class="content_btn flex between column">
+                      <div class="btn_title">Dodopizza
+                        <p>Еда, Доставка</p>
+                      </div>
+                      <a href="" class="link_item">Подробнее</a>
+
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <!-- 3-->
+                  <div class="button_item flex" data-target="3">
+                    <div class="img_btn">
+                      <img src="./src/assets/dot.png" alt="">
+                    </div>
+                    <div class="content_btn flex between column">
+                      <div class="btn_title">Dodopizza
+                        <p>Еда, Доставка</p>
+                      </div>
+                      <a href="" class="link_item">Подробнее</a>
+
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  <!-- 4 -->
+                  <div class="button_item flex" data-target="1">
+                    <div class="img_btn">
+                      <img src="./src/assets/dot.png" alt="">
+                    </div>
+                    <div class="content_btn flex between column">
+                      <div class="btn_title">Dodopizza
+                        <p>Еда, Доставка</p>
+                      </div>
+                      <a href="" class="link_item">Подробнее</a>
+
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  <!-- 5 -->
+                  <div class="button_item flex" data-target="1">
+                    <div class="img_btn">
+                      <img src="./src/assets/dot.png" alt="">
+                    </div>
+                    <div class="content_btn flex between column">
+                      <div class="btn_title">Dodopizza
+                        <p>Еда, Доставка</p>
+                      </div>
+                      <a href="" class="link_item">Подробнее</a>
+
+                    </div>
+                  </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
-          </div>
-
-
-          <div thumbsSlider="" class="swiper mySwiper slide_buttons flex column">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <!-- 1 -->
-                <div class="button_item flex " data-target="1">
-                  <div class="img_btn">
-                    <img src="./src/assets/dot.png" alt="">
-                  </div>
-                  <div class="content_btn flex between column">
-                    <div class="btn_title">Dodopizza
-                      <p>Еда, Доставка</p>
+                  <!-- 5 -->
+                  <div class="button_item flex" data-target="1">
+                    <div class="img_btn">
+                      <img src="./src/assets/dot.png" alt="">
                     </div>
-                    <a href="" class="link_item">Подробнее</a>
+                    <div class="content_btn flex between column">
+                      <div class="btn_title">Dodopizza
+                        <p>Еда, Доставка</p>
+                      </div>
+                      <a href="" class="link_item">Подробнее</a>
 
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- 2 -->
-                <div class="button_item flex" data-target="2">
-                  <div class="img_btn">
-                    <img src="./src/assets/dot.png" alt="">
-                  </div>
-                  <div class="content_btn flex between column">
-                    <div class="btn_title">Dodopizza
-                      <p>Еда, Доставка</p>
                     </div>
-                    <a href="" class="link_item">Подробнее</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- 3-->
-                <div class="button_item flex" data-target="3">
-                  <div class="img_btn">
-                    <img src="./src/assets/dot.png" alt="">
-                  </div>
-                  <div class="content_btn flex between column">
-                    <div class="btn_title">Dodopizza
-                      <p>Еда, Доставка</p>
-                    </div>
-                    <a href="" class="link_item">Подробнее</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- 4 -->
-                <div class="button_item flex" data-target="1">
-                  <div class="img_btn">
-                    <img src="./src/assets/dot.png" alt="">
-                  </div>
-                  <div class="content_btn flex between column">
-                    <div class="btn_title">Dodopizza
-                      <p>Еда, Доставка</p>
-                    </div>
-                    <a href="" class="link_item">Подробнее</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- 5 -->
-                <div class="button_item flex" data-target="1">
-                  <div class="img_btn">
-                    <img src="./src/assets/dot.png" alt="">
-                  </div>
-                  <div class="content_btn flex between column">
-                    <div class="btn_title">Dodopizza
-                      <p>Еда, Доставка</p>
-                    </div>
-                    <a href="" class="link_item">Подробнее</a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <!-- 5 -->
-                <div class="button_item flex" data-target="1">
-                  <div class="img_btn">
-                    <img src="./src/assets/dot.png" alt="">
-                  </div>
-                  <div class="content_btn flex between column">
-                    <div class="btn_title">Dodopizza
-                      <p>Еда, Доставка</p>
-                    </div>
-                    <a href="" class="link_item">Подробнее</a>
-
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
-        </div>
-        <img class="bg bg_bottom" src="./src/assets/bg_top.png" alt="">
 
-      </div>
-    </section>
-    <section class="comments">
-      <div class="container">
-        <div class="section_title">
-          <h2>Отзывы наших клиентов</h2>
-          <a href="" class="button">Посмотреть все</a>
+          </div>
+          <img class="bg bg_bottom" src="./src/assets/bg_top.png" alt="">
+
         </div>
-        <div class="comment_container flex between">
-          <div class="comment_items flex column">
+      </section>
+      <section class="comments" id="comment">
+        <div class="container">
+          <div class="section_title">
+            <h2>Отзывы наших клиентов</h2>
+            <a href="" class="button">Посмотреть все</a>
+          </div>
+          <div class="comment_container">
             <div class="comment_item">
               <div class="comment_top flex">
                 <div class="logo">
@@ -324,8 +570,92 @@
               <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
               <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
             </div>
-          </div>
-          <div class="comment_items flex column">
+
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                проведена плодотворная работа с учетом наших желаний. Большая команда специалистов дала знать о своем
+                опыте работы в данной сфере</div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">
+                Работа выполнина на высшем уровне. Все быстро и качественно. Была проведена плодотворная работа с учетом
+                наших желаний.
+              </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                проведена плодотворная работа с учетом наших желаний. Большая команда специалистов дала знать о своем
+                опыте работы в данной сфере</div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+            <div class="comment_item">
+              <div class="comment_top flex">
+                <div class="logo">
+                  <img src="./src/assets/user_logo.png" alt="">
+                </div>
+                <div class="user_info">
+                  <div class="user_title">Namecompany</div>
+                  <div class="user_stars flex a_center">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/full_star.svg" alt="">
+                    <img src="./src/assets/disable_star.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
+                проведена плодотворная работа с учетом наших желаний. </div>
+              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
+            </div>
+
             <div class="comment_item">
               <div class="comment_top flex">
                 <div class="logo">
@@ -361,49 +691,6 @@
                   </div>
                 </div>
               </div>
-              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
-                проведена плодотворная работа с учетом наших желаний. Большая команда специалистов дала знать о своем
-                опыте работы в данной сфере</div>
-              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-            </div>
-          </div>
-          <div class="comment_items flex column">
-            <div class="comment_item">
-              <div class="comment_top flex">
-                <div class="logo">
-                  <img src="./src/assets/user_logo.png" alt="">
-                </div>
-                <div class="user_info">
-                  <div class="user_title">Namecompany</div>
-                  <div class="user_stars flex a_center">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/disable_star.svg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="comment_descrption">Работа выполнина на высшем уровне. Все быстро и качественно. Была
-                проведена плодотворная работа с учетом наших желаний. </div>
-              <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
-            </div>
-            <div class="comment_item">
-              <div class="comment_top flex">
-                <div class="logo">
-                  <img src="./src/assets/user_logo.png" alt="">
-                </div>
-                <div class="user_info">
-                  <div class="user_title">Namecompany</div>
-                  <div class="user_stars flex a_center">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/full_star.svg" alt="">
-                    <img src="./src/assets/disable_star.svg" alt="">
-                  </div>
-                </div>
-              </div>
               <div class="comment_descrption">Работа выполнина на высшем уровне. </div>
               <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
             </div>
@@ -427,9 +714,10 @@
               <img class="card_bg" src="./src/assets/comment_cardbg.png" alt="">
             </div>
           </div>
+          
         </div>
         <div class="comment_mobile">
-          <div class="">
+          <div class="swiper swiperMobile">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="comment_item">
@@ -609,53 +897,85 @@
             </div>
           </div>
         </div>
-      </div>
-      <img class="comment_bg index" src="./src/assets/commentsbg.png" alt="">
-      <img class="comment_bg bg" src="./src/assets/bg_linear.png" alt="">
-    </section>
-    <footer>
-      <div class="container flex between">
-        <div class="footer-left">
-          <div class="footer_logo flex a_center">
-            <img src="./src/assets/logo.svg" alt="Web Direction Logo" class="footer-logo">
-            <h2 class="footer_logo_text">web direction</h2>
-          </div>
-          <form action="" class="footer_form">
-            <p>У вас остались вопросы? Свяжитесь с нами!</p>
-            <div class="contact-form">
-              <input type="phone" placeholder="Введите номер...">
-              <button class="button">Оставить заявку</button>
-            </div>
-          </form>
-
-          <div class="contact-info">
-            <a href="tel:+79453453443" class="tel">+7 (945) 345-34-43</a>
-            <div class="social-icons">
-              <a href="#"><img src="./src/assets/wp.svg" alt="WhatsApp"></a>
-              <a href="#"><img src="./src/assets/telegram.svg" alt="Telegram"></a>
-              <a href="#"><img src="./src/assets/wk.svg" alt="VK"></a>
-            </div>
-          </div>
-          <p class="work-hours">График работ: <span class="red-text">пн-вс, с 8:00 по 22:00 МСК</span></p>
+        <img class="comment_bg index" src="./src/assets/commentsbg.png" alt="">
+        <img class="comment_bg bg" src="./src/assets/bg_linear.png" alt="">
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__header">
+          <a href="" class="footer__header_title">
+            <img src="./src/assets/logo.svg" alt="logo" />
+            Web Direction
+          </a>
         </div>
-        <div class="footer-right">
-          <ul>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Список работ</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Политика соглашения</a></li>
-            <li><a href="#">FAQ</a></li>
+        <div class="footer__body">
+          <div class="footer__body__contacts footer__contacts">
+            <form action="#" class="footer__contacts__form">
+              <h5 class="footer__form__title">
+                У вас остались вопросы? Свяжитесь с нами!
+              </h5>
+              <div class="footer__form__user-activity">
+                <div class="footer__form__wrapper-input">
+                  <img src="src/assets/ph.svg" alt="Телефон" />
+                  <input type="text" class="footer__form__input" placeholder="Введите номер..." />
+                </div>
+                <button class="footer__form__btn button">
+                  Оставить заявку
+                </button>
+              </div>
+            </form>
+            <div class="footer__contacts__phone-call footer__phone">
+              <a href="tel:+79453453443" class="footer__phone__call">+7 (945) 345-34-43</a>
+              <ul class="footer__phone__list">
+                <li class="footer__phone__item">
+                  <a href="#" class="footer__phone__link flex a_center ">
+                    <img src="./src/assets/wp.svg" alt="whatsapp" />
+                  </a>
+                </li>
+                <li class="footer__phone__item">
+                  <a href="#" class="footer__phone__link flex a_center ">
+                    <img src="./src/assets/telegram.svg" alt="tg" />
+                  </a>
+                </li>
+                <li class="footer__phone__item">
+                  <a href="#" class="footer__phone__link flex a_center ">
+                    <img src="./src/assets/wk.svg" alt="vk" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="footer__contacts__dedlain">
+              График работы: <span>пн-вс, с 8:00 по 22:00 МСК</span>
+            </p>
+          </div>
+          <ul class="footer__body__menu footer__menu">
+            <li class="footer__menu__item">
+              О нас
+            </li>
+            <li class="footer__menu__item">
+              <a href="#" class="footer__menu__link">Список работ</a>
+            </li>
+            <li class="footer__menu__item">
+              <a href="#" class="footer__menu__link">Отзывы</a>
+            </li>
+            <li class="footer__menu__item">
+              <a href="#" class="footer__menu__link">Контакты</a>
+            </li>
+            <li class="footer__menu__item">
+              <a href="#" class="footer__menu__link">Политика соглашения</a>
+            </li>
+            <li class="footer__menu__item">
+              <a href="#" class="footer__menu__link">FAQ</a>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2022. All rights reserved</p>
+        <p class="footer__text">© 2022. All rights reserved</p>
       </div>
     </footer>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   <script type="module" src="main.js" defer></script>
 </body>
 

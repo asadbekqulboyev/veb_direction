@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'header';
 @import 'portfolio';
 @import 'hero';
 @import 'comments';
+@import 'footer';
 
 * {
     margin: 0;
     padding: 0;
 }
-
+button,input{
+    outline: none;
+    border: none;
+}
 body {
     font-family: 'Inter';
     background: #121212;
@@ -66,6 +71,20 @@ a {
         font-size: 34px;
         font-weight: 700;
         line-height: 40.8px;
+        @media (max-width:768px) {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        @media (max-width:556px) {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        @media (max-width:400px) {
+            font-size: 15px;
+        }
+        @media (max-width:336px) {
+            font-size: 13px;
+        }
     }
 }
 
@@ -78,7 +97,15 @@ a {
     border-radius: 8px;
     padding: 10px 20px;
     color: #fff;
-
+    transition: all .3s linear;
+    @media (max-width:400px) {
+        font-weight: 400;
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+    &:hover{
+        opacity: .7;
+    }
     &.light {
         padding: 7.5px 21px;
         color: #3C3C3C;
@@ -96,227 +123,101 @@ a {
     @media (max-width:1100px) {
         max-width: 768px;
     }
-}
-
-
-.header {
-    padding: 19px 0;
-    background-color: #121212;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 22;
-
-    .dropdown {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0 10px;
-        @media (max-width:1100px) {
-            display: none;
-        }
-        img {
-            transition: all .3s linear;
-
-            &.rotate {
-                transform: rotate(-180deg);
-            }
-        }
-    }
-
-    .dropdown_child {
-        position: absolute;
-        top: 30px;
-        left: 0;
-        display: none;
-
-        a {
-            padding: 5px 20px;
-            background-color: #121212;
-            display: block;
-            width: 95px;
-
-            &:hover {
-                background-color: #3a3a3a;
-            }
-
-        }
-    }
-
-    &_left {
-        display: flex;
-        gap: 0 60px;
-        align-items: center;
-
-        li {
-            position: relative;
-        }
-    }
-
-    &_right {
-
-        a {
-            color: #fff;
-        }
-
-        .button {
-            font-weight: 700;
-        }
-
-        .flex {
-            gap: 0 17px;
-        }
-
-        li {
-            position: relative;
-        }
-    }
-
-    &_menu {
-        display: flex;
-        gap: 0 21px;
-
-        a {
-            color: #fff;
-        }
+    @media (max-width:768px) {
+        max-width: 480px;
     }
 }
-footer {
-    background-color: #181818;
-    color: #fff;
-    padding: 20px;
-    .footer_form {
-        margin-top: 20px;
-        border-radius: 10px;
-        padding: 25px;
-        background: #1E1D1D;
-        position: relative;
-        z-index: 3333;
-        p{
-            font-weight: 500;
-        }
 
-    }
 
-    .container {
-        align-items: flex-end;
+// .header {
+//     padding: 19px 0;
+//     background-color: #121212;
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 2278;
 
-        .footer-left {
-            .contact-form {
-                display: flex;
-                align-items: center;
-                margin-top: 8px;
-                input {
-                    padding: 12px 10px;
-                    border-radius: 5px;
-                    border: 0;
-                    margin-right: 10px;
-                    outline: 0;
-                    flex: 1;
-                    background-color:#121212;
-                    color: #fff;
-                    border-radius: 6px;
-                    &::placeholder {
-                        font-size: 14px;
-                        line-height: 16.8px;
-                    }
-                }
+//     .dropdown {
+//         cursor: pointer;
+//         display: flex;
+//         align-items: center;
+//         gap: 0 10px;
+//         @media (max-width:1100px) {
+//             display: none;
+//         }
+//         img {
+//             transition: all .3s linear;
 
-                button {
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                    &:hover {
-                        background-color: #c0392b;
-                    }
-                }
-            }
+//             &.rotate {
+//                 transform: rotate(-180deg);
+//             }
+//         }
+//     }
 
-            .contact-info {
-                
-                a.tel{display:inline-block;color: #fff;margin: 19px 0; }
-                .social-icons {
-                    display: flex;
-                    a {
-                        margin-right: 10px;
-                        width: 35px;
-                        height: 35px;
-                        display: flex;
-                        background: #121212;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 6.5px;
-                        &:hover {
-                            background: #f828284a;
-                        }
+//     .dropdown_child {
+//         position: absolute;
+//         top: 30px;
+//         left: 0;
+//         display: none;
 
-                        img {
-                            width: 22px;
-                            height: 22px;
-                        }
-                    }
-                }
-            }
+//         a {
+//             padding: 5px 20px;
+//             background-color: #121212;
+//             display: block;
+//             width: 95px;
 
-            .work-hours {
-                margin-top: 10px;
+//             &:hover {
+//                 background-color: #3a3a3a;
+//             }
 
-                .red-text {
-                    color: #e74c3c;
-                }
-            }
-        }
+//         }
+//     }
 
-        .footer-right {
-            ul {
-                list-style: none;
-                padding: 0;
+//     &_left {
+//         display: flex;
+//         gap: 0 60px;
+//         align-items: center;
+//         @media (max-width:768px) {
+//             gap: 0 25px;
+//         }
 
-                li {
-                    margin-bottom: 10px;
-                    &:first-child{
-                        a{
-                            font-weight: 700;
-                            color: #fff;
-                        }
-                    }
-                    a {
-                        color:#ACACAC;
-                        text-decoration: none;
-                        transition: color 0.3s;
+//         li {
+//             position: relative;
+//         }
+//     }
 
-                        &:hover {
-                            color: #e74c3c;
-                        }
-                    }
-                }
-            }
-        }
-    }
+//     &_right {
+//         @media (max-width:768px) {
+//             display: none;
+//         }
+//         a {
+//             color: #fff;
+//         }
 
-    .footer-bottom {
-        text-align: center;
-        margin-top: 20px;
+//         .button {
+//             font-weight: 700;
+//         }
 
-        p {
-            margin: 0;
-            font-size: 14px;
-            color: #ccc;
-        }
-    }
+//         .flex {
+//             gap: 0 17px;
+//             @media (max-width:768px) {
+//                 gap: 0 11px;
+//             }
+//         }
 
-    .footer_logo {
+//         li {
+//             position: relative;
+//         }
 
-        gap: 0 15px;
+//     }
 
-        .footer_logo_text {
-            font-size: 25px;
-            font-weight: 700;
-            text-align: left;
-            text-transform: uppercase;
-        }
-    }
+//     &_menu {
+//         display: flex;
+//         gap: 0 21px;
 
-}
+//         a {
+//             color: #fff;
+//         }
+//     }
+// }

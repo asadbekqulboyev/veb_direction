@@ -1,6 +1,11 @@
 .portfolio {
-    margin-top: 25px;
+    padding-top: 25px;
     padding-bottom: 90px;
+    background: rgba(0, 0, 0, 0.453);
+
+    @media (max-width:768px) {
+        padding-bottom: 20px;
+    }
 
     .container {
         position: relative;
@@ -8,14 +13,27 @@
         .bg {
             position: absolute;
 
+            @media (max-width:768px) {
+                width: 160px;
+            }
+
             &_top {
                 top: 32px;
                 left: -36px;
+
+                @media (max-width:768px) {
+                    top: 42px;
+                }
             }
 
             &_bottom {
                 bottom: -69px;
                 right: -47px;
+
+                @media (max-width:768px) {
+                    bottom: 0px;
+                    right: -27px;
+                }
             }
         }
 
@@ -23,14 +41,37 @@
             margin-top: 30px;
             position: relative;
             z-index: 21;
-            .swiper{
-                max-height: 702px;
-                
+
+            @media (max-width:1100px) {
+                flex-direction: column;
             }
+
+            .swiper {
+                max-height: 702px;
+
+                @media (max-width:1100px) {
+                    height: 400px;
+                }
+
+                @media (max-width:456px) {
+                    height: 320px;
+                }
+
+                @media (max-width:456px) {
+                    height: 280px;
+                }
+
+            }
+
             .slide_image_content {
                 border-radius: 10px;
                 overflow: hidden;
                 width: calc(70% - 11px);
+
+                @media (max-width:1100px) {
+                    width: 100%;
+                }
+
                 img {
                     width: 100%;
                     object-fit: contain;
@@ -40,113 +81,143 @@
             .slide_buttons {
                 width: calc(30% - 11px);
                 gap: 14px;
-                .swiper-slide-thumb-active{
+                margin-right: 0;
+
+                @media (max-width:1100px) {
+                    margin-top: 15px;
+                    width: 100%;
+                    height: 285px;
+                }
+
+                .swiper-slide-thumb-active {
                     .button_item {
-                        &::after{
+                        &::after {
                             content: '';
-                            width:10px ;
+                            width: 10px;
                             height: 100%;
                             background: #CF2F2F;
-                            border-radius: 10px 0 0 10px;
+                            border-radius: 10px 0px 0 10px;
+                            left: 5px;
+                            top: 0;
+                            position: absolute;
+                            display: block;
+
+                            @media (max-width:1100px) {
+                                border-radius: 10px 10px 0 0;
+                                left: 0;
+                                width: 100%;
+                                height: 10px;
+                                top: 10px;
+                            }
+                        }
+
+                        &::before {
+                            content: '';
+                            width: 13px;
+                            height: 33px;
+                            background: #CF2F2F;
+                            border-radius: 10px 0px 0px 10px;
                             left: 0;
                             top: 0;
-                            position: absolute;
-                            display: block;
-                        }
-                        &::before{
-                            content: '';
-                            width:13px ;
-                            height: 30px;
-                            background: #fff4f4;
-                            border-radius: 10px 0 0 10px;
-                            left: -3px;
-                            top: 0;
                             bottom: 0;
-                            margin: auto 0;
                             position: absolute;
                             display: block;
-                        
-                        }
-                        .img_btn{
-                            img{
-                                height: 100%;
+                            margin: auto 0;
+
+                            @media (max-width:1100px) {
+                                border-radius: 10px 10px 0 0;
+                                width: 39px;
+                                height: 10px;
+                                bottom: auto;
+                                right: 0;
+                                top: 5px;
+                                margin: 0 auto;
                             }
-                        }
-                        .btn_title {
-                            font-size: 22px;
-                            font-weight: 700;
-                            line-height: 26.4px;
-                            text-align: left;
-                            p{
-                                font-size: 14px;
-                                font-weight: 400;
-                            }
-                        }
-                        .link_item{
-                            color: #C92222;
-                        }
-                        .content_btn {
-                            padding: 10px 15px;
                         }
                     }
                 }
+
                 .button_item {
                     background: #181818;
                     border-radius: 10px;
+                    margin-left: auto;
                     position: relative;
                     cursor: pointer;
+                    transition: all .2s linear;
 
-                    &.active{
-                    &::after{
-                        content: '';
-                        width:10px ;
-                        height: 100%;
-                        background: #CF2F2F;
-                        border-radius: 10px 0 0 10px;
-                        left: 0;
-                        top: 0;
-                        position: absolute;
-                        display: block;
+                    &:hover {
+                        transform: scale(.99);
+
                     }
-                    &::before{
-                        content: '';
-                        width:13px ;
-                        height: 30px;
-                        background: #CF2F2F;
-                        border-radius: 10px 0 0 10px;
-                        left: -3px;
-                        top: 0;
-                        bottom: 0;
-                        margin: auto 0;
-                        position: absolute;
-                        display: block;
+
+                    @media (max-width:1100px) {
+                        overflow: hidden;
+                        border-radius: 5px;
+                        flex-direction: column;
                     }
-                    }
-                    .img_btn{
-                        img{
+
+                    .img_btn {
+                        padding-left: 10px;
+                        background: rgba(0, 0, 0, 0.453);
+
+                        @media (max-width:1100px) {
+                            padding-top: 10px;
+                            padding-left: 0;
+                        }
+
+                        img {
                             height: 100%;
+
+                            @media (max-width:1100px) {
+                                height: auto;
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        @media (max-width:1100px) {
+                            border-radius: 0;
                         }
                     }
+
                     .btn_title {
                         font-size: 22px;
                         font-weight: 700;
                         line-height: 26.4px;
                         text-align: left;
-                        p{
+
+                        @media (max-width:1100px) {
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+
+                        p {
                             font-size: 14px;
                             font-weight: 400;
                         }
                     }
-                    .link_item{
+
+                    .link_item {
+                        font-size: 14px;
                         color: #C92222;
+                        transition: all .3s linear;
+
+                        &:hover {
+                            opacity: .9;
+                        }
                     }
+
                     .content_btn {
-                        padding: 10px 15px;
+                        padding: 10px 10px 5px 25px;
+
+                        @media (max-width:1100px) {
+                            padding: 5px 8px;
+
+                        }
                     }
                 }
             }
 
-            &_buttons {}
         }
     }
 }
