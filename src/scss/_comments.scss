@@ -52,86 +52,38 @@
 
     }
     .comment_container {
-        display: flex; 
-        flex-wrap: wrap;
+        column-count: 3; // 3 ustunli qilish
+        column-gap: 20px; // Ustunlar orasidagi masofa
         width: 100%;
+        margin-top: 20px;
         position: relative;
         z-index: 12;
-        justify-content: space-between;
-        margin: -10px;
-        margin-top: 20px;
-        margin-left: auto;
-
+    
+        @media (max-width: 1250px) {
+            column-count: 2; 
+        }
+    
         @media (max-width: 768px) {
-            display: none; 
+         display: none;    
         }
     }
-
+    
     .comment_item {
-        display: block;
         background-color: #161717;
         border-radius: 10px;
         overflow: hidden;
-        height: fit-content;
         padding: 20px;
-        width: calc(30% - 20px); // 3 ta qator uchun kenglik
-        margin: 10px;
-
-        @media (max-width: 1250px) {
-            width: 44.1%; // 2 ta qator uchun kenglik
-        }
-
-        @media (max-width: 1100px) {
-            width: 92%; // Kichik ekranlar uchun bitta qator
-        }
+        width:calc(100% - 40px) ;
+        margin-bottom: 10px;
+        display: inline-block; 
+        position: relative;
         .card_bg {
             position: absolute;
             right: 0;
             bottom: 0;
         }
-        &:nth-child(3n) {
-            margin-right: 0; 
-            // margin-left: auto;
-        }
     }
 
-    // .comment_container {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     // justify-content: space-between;
-    //     width: 100%;
-    //     position: relative;
-    //     z-index: 12;
-    //     margin-top: 20px;
-    //     @media (max-width: 768px) {
-    //         display: none; // Kichik ekranlarda ko'rinmasligi
-    //     }
-    // }
-    
-    // .comment_item {
-    //     display: block;
-    //     background-color: #161717;
-    //     border-radius: 10px;
-    //     overflow: hidden;
-    //     position: relative;
-    //     height: fit-content;
-    //     padding: 20px;
-    //     width: calc(33.33% - 25px); 
-    //     // margin-right: 20px; 
-    //     margin-bottom: 20px; 
-    
-    //     .card_bg {
-    //         position: absolute;
-    //         right: 0;
-    //         bottom: 0;
-    //     }
-    
-    //     // Har uchinchi elementdan keyin o'ng bo'shliqni olib tashlash
-    //     &:nth-child(3n) {
-    //         margin-right: 0; 
-    //     }
-    // }
-    
 
     .comment_top {
         gap: 15px;
@@ -156,6 +108,7 @@
         }
 
         .user_stars {
+            margin-top: 6px;
             gap: 3px;
         }
     }
@@ -181,13 +134,9 @@
         .comment_item {
             width: calc(88% - 5px);
             height: 100%;
-            min-height: 170px;
             position: relative;
             overflow: hidden;
-            @media (max-width:345px) {
-                min-height: 190px;
 
-            }
         }
     }
 

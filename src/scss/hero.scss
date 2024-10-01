@@ -1,7 +1,10 @@
 .hero {
     margin-top: 100px;
     // padding-bottom: 20px;
-    background-color: #1a1a1a;
+    background-color: #181818;
+    @media (max-width:768px) {
+        margin-top: 80px;
+    }
 
     &_btn_title {
         font-size: 34px;
@@ -25,58 +28,106 @@
     &_left {
         width: 50%;
         position: relative;
+        display: flex;
         overflow: hidden;
         @media (max-width:768px) {
             width: 100%;
         }
         .content {
-            background: #f828289f;
+            background: #F8282880;
             clip-path: polygon(0% 0%, 100% 0%, 75.5% 100%, 0% 100%);
             width: calc(100% - 52px);
+
             @media (max-width:1100px) {
                 width: calc(100% - 32px);
             }
             @media (max-width:768px) {
+                display: none;
                 width: 100%;
                 clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
+
             }
            
 
         }
 
-        &::after {
+        .line {
             content: '';
             width: 21px;
-            border-right: 21px solid #511616c8;
-            background-color: #F8282840;
-            height: 120%;
-            display: block;
+            background-color:#F8282840;
+            transform: rotate(16.2deg);
             position: absolute;
-            right: 72px;
+            height: 120%;
             top: -10%;
-            z-index: 20;
-            transform: rotate(17.5deg);
+            right: 88px;
             @media (max-width:1250px) {
-            transform: rotate(18.9deg);
+            transform: rotate(22.1deg);
                 width: 18px;
                 border-width: 18px;
-                right: 68px;
+                right: 96px;
             }
             @media (max-width:1100px) {
-            transform: rotate(16.2deg);
+            transform: rotate(24.5deg);
                 width: 16px;
                 border-width: 16px;
-                right: 59px; 
+                right: 76px; 
             }
+            @media (max-width:1055px) {
+                transform: rotate(23.4deg);
+                    right: 73px; 
+                }
+                @media (max-width:1000px) {
+                    transform: rotate(22.1deg);
+                        right: 70px; 
+                    }
+                    @media(max-width:930px)  {
+                        transform: rotate(20.5deg);
+                        right: 66px;
+                    }
+                    @media(max-width:830px)  {
+                        transform: rotate(18.2deg);
+                        right: 60px;
+                    }
             @media (max-width:768px) {
                 display: none;
             }
         }
+        .line.dark {
+            flex: 0 0 auto;
+            width: 21px;
+            background-color:#F828280D;
+            display: block;
+            position: absolute;
+            height: 120%;
+            top: -10%;
+            right: 66px;
+            @media (max-width:1250px) {
+                width: 18px;
+                border-width: 18px;
+                right: 76px;
+            }
+            @media (max-width:1100px) {
+                width: 16px;
+                right: 59px; 
+            }
+            @media (max-width:1100px) {
+                right: 53px; 
+            }
+            @media(max-width:930px)  {
+                right: 49px;
+            }
+            @media(max-width:830px)  {
+                right: 42px;
+            }
 
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
         ul {
             @media (max-width:768px) {
                 display: flex;
-
+                overflow-x: auto;
             }
             .menu-item {
                 padding: 21px 0 21px 60px;
@@ -103,6 +154,7 @@
                 @media (max-width:768px) {
                     padding: 5px 10px;
                     font-size: 12px;
+                    flex: 0 0 auto;
                 }
                 @media (max-width:376px) {
                     padding: 2px 5px;
@@ -113,7 +165,7 @@
                 }
                 &:hover,
                 &.active {
-                    background-color: #C82F2F;
+                    background-color:#C82F2F;
                     svg {
                         fill: #fff;
                     }
@@ -129,12 +181,17 @@
         }
         @media (max-width:768px) {
             flex-direction: column;
+            gap: 15px;
         }
         .hero_right {
             width: 50%;
             padding: 20px;
+            @media (max-width:1250px) {
+                padding: 0;
+            }
             @media (max-width:768px) {
                 width: 100%;
+                padding-bottom: 15px;
             }
 
             .slide {

@@ -1,11 +1,14 @@
+
+import Swiper from 'swiper';
+
+// import Swiper, { Navigation, Pagination } from 'swiper';
+import 'swiper/swiper-bundle.css';
 import $ from 'jquery';
-import Masonry from 'masonry-layout';
+import { Navigation, Thumbs } from 'swiper/modules';
 
 window.addEventListener('DOMContentLoaded', function () {
-
-
+  setEqualHeight();
   var header_lists = $(".header .lists_wrapper, .header .header__settings");
-
   $(".navigation").click(function () {
       hederCloseMenus();
       var item = $(this).find(".lists_wrapper");
@@ -13,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
           item.slideDown();
       }
   });
-  
+
   $(".header__settings_icon").click(function () {
       hederCloseMenus();
       var item = $(this).siblings(".header__settings");
@@ -127,18 +130,6 @@ swiperHero.on("slideChange", function (e) {
   navTarget.addClass("active");
 });
 
-  // Menyu elementlarini almashtirish
-  // $('.menu-item').on('click', function () {
-  //   var slideIndex = $(this).data('slide'); // Tanlangan menyu elementi
-
-  //   // Chap tarafdagi menyu item'ni aktiv qilish
-  //   $('.menu-item').removeClass('active'); // Hamma elementlardan 'active' klassini olib tashlaymiz
-  //   $(this).addClass('active'); // Tanlangan elementga 'active' klassini qo‘shamiz
-
-  //   // O'ng tarafdagi slaydlarni almashtirish
-  //   $('.slide').removeClass('active'); // Barcha slaydlardan 'active' klassini olib tashlaymiz
-  //   $('#slide-' + slideIndex).addClass('active'); // Tanlangan slaydga 'active' klassini qo‘shamiz
-  // });
   var swiper2 = new Swiper(".slides_hero");
   var swipers = new Swiper(".swiperMobile", {
     breakpoints: {
@@ -169,8 +160,9 @@ swiperHero.on("slideChange", function (e) {
       0: { slidesPerView: 2.2,direction: "horizontal", spaceBetween: 20, },
       350: { slidesPerView: 2.6,direction: "horizontal", spaceBetween: 20, },
       456: { slidesPerView: 3 , spaceBetween: 20, },
-      556: { slidesPerView: 3 , spaceBetween: 20, },
-      768: { slidesPerView: 4 ,spaceBetween: 20,},
+      556: { slidesPerView: 4 , spaceBetween: 20, },
+      // 768: { slidesPerView: 4 ,spaceBetween: 20},
+      880: { slidesPerView: 5 ,spaceBetween: 20},
       1100: {
          slidesPerView: 5,
          direction: "vertical",
@@ -181,6 +173,7 @@ swiperHero.on("slideChange", function (e) {
   });
   var swiper2 = new Swiper(".mySwiper2", {
     // spaceBetween: 10,
+    modules:[Navigation,Thumbs],
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -196,10 +189,30 @@ swiperHero.on("slideChange", function (e) {
 
 });
 
-const elem = document.querySelector('.comment_container');
-new Masonry(elem, {
-  itemSelector: '.comment_item',
-  columnWidth: '.comment_item',
-  percentPosition: true,
-  // gutter: 20 
-});
+window.onload = function() {
+  
+};
+
+window.onresize = function() {
+  setEqualHeight();
+};
+
+function setEqualHeight() {
+  let commentItems = document.querySelectorAll('.comment_mobile .comment_item');
+  let maxHeight = 0;
+
+  commentItems.forEach(item => {
+    item.style.height = 'auto';
+  });
+
+  commentItems.forEach(item => {
+    let height = item.offsetHeight;
+    if (height > maxHeight) {
+      maxHeight = height;
+    }
+  });
+
+  commentItems.forEach(item => {
+    item.style.height = (maxHeight) + 'px';
+  });
+}

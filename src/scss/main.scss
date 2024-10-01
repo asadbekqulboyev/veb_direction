@@ -22,18 +22,20 @@ body {
     line-height: 28px;
 }
 .swiper-button-next,.swiper-button-prev{
-color: #C92222;
+
 display: flex;
 justify-content: center;
 align-items: center;
-width: 34px;
+width: 34px !important;
 border-radius: 50%;
-height: 34px;
+height: 34px !important;
+flex:1;
 background: #ACACAC;
-&::after{
-    font-size: 20px ;
-    font-weight: bolder;
+&:after{
+    font-size: 20px !important;
+    font-weight: bolder !important;
     line-height: normal;
+    color: #C92222;
 }
 }
 .wrapper{
@@ -117,15 +119,18 @@ a {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 10px;
-    @media (max-width:1250px) {
-        max-width: 1024px;
-    }
-    @media (max-width:1100px) {
-        max-width: 768px;
-    }
-    @media (max-width:768px) {
-        max-width: 480px;
-    }
+    // @media (max-width:1250px) {
+    //     max-width: 1024px;
+    // }
+    // @media (max-width:1100px) {
+    //     max-width: 768px;
+    // }
+    // @media (max-width:768px) {
+    //     max-width: 480px;
+    // }
+    // @media (max-width:556px) {
+    //     max-width: 100%;
+    // }
 }
 
 
